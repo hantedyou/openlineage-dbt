@@ -26,6 +26,10 @@ dist/
 .vscode/
 .idea/
 
+# Claude Code
+.claude/
+
 
 # refernece for cladue
 REF/
+learning_note/
