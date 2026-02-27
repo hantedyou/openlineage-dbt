@@ -1,4 +1,6 @@
 transport:
   type: file
-  log_file_path: events/events.ndjson
+  # log_file_path is relative to the dbt-ol execution directory (jaffle_shop/), not this config file
+  # jaffle_shop/ -> ../ -> openlineage_dbt/ -> openlineage/events/
+  log_file_path: ../openlineage/events/events.ndjson
   append: true
