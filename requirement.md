@@ -183,7 +183,6 @@ Aggregation  →  ⚠️ 同上
 openlineage_dbt/
 ├── README.md                    # 專案說明、架構圖、Quick Start
 ├── pyproject.toml               # uv 管理的依賴
-├── openlineage.yml              # OpenLineage 設定（transport、namespace 等）
 ├── jaffle_shop/                 # dbt 專案
 │   ├── dbt_project.yml
 │   ├── profiles.yml
@@ -192,14 +191,16 @@ openlineage_dbt/
 │   │   ├── intermediate/    # int_order_payments
 │   │   └── marts/           # mart_customer_summary
 │   └── target/                  # dbt artifacts（.gitignore）
-├── ol_events/                   # File transport 存放的事件（.gitignore）
+├── openlineage/                 # OpenLineage 設定（關注點分離）
+│   ├── openlineage.yml          # transport 設定，透過 OPENLINEAGE_CONFIG 注入
+│   └── events/                  # File transport 輸出（.gitignore）
 ├── docker/                      # Milestone 3 的 Marquez Docker Compose
 │   └── docker-compose.yml
-└── docs/                        # 各 Milestone 的學習筆記（dev.to 草稿）
-    ├── milestone1.md
-    ├── milestone2.md
-    ├── milestone3.md
-    └── milestone4.md
+└── learning_note/               # 學習筆記與 dev.to 文章草稿（.gitignore）
+    ├── milestone1.md            # 學習筆記
+    ├── milestone1_article.md    # dev.to 文章草稿
+    ├── dbt_cheatsheet.md
+    └── ...
 ```
 
 ## 8. 文件規格
