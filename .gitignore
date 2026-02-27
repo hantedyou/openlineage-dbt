@@ -9,7 +9,7 @@ logs/
 *.duckdb.wal
 
 # OpenLineage
-ol_events/
+openlineage/events/
 
 # Python / uv
 .venv/

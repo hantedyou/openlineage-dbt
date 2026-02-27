@@ -1,4 +1,0 @@
-transport:
-  type: file
-  log_file_path: ../ol_events/events.ndjson
-  append: true
