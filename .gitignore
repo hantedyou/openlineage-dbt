@@ -1,0 +1,31 @@
+# dbt
+target/
+dbt_packages/
+logs/
+.dbt/
+
+# DuckDB
+*.duckdb
+*.duckdb.wal
+
+# OpenLineage
+ol_events/
+
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+.python-version
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+
+# refernece for cladue
+REF/

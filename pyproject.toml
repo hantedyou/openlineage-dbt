@@ -1,0 +1,10 @@
+[project]
+name = "ol-dbt-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-duckdb>=1.10.1",
+    "openlineage-dbt>=1.44.1",
+]
